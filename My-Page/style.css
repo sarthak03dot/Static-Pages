@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position:relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 140px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    box-shadow: 0px 10px 20px rgba(255, 255, 100, 0.7);
+
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #333;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+    color: #fffefe;
+}
+.content p {
+    margin: 10px 0 30px;
+    color: #fffafa;
+    animation-delay: 0.5s;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+
+.btn:hover {
+    border-bottom-right-radius: 30px;
+    border-color: white;
+    box-shadow: 0 0 10px rgb(255, 255, 100), 0 0 30px rgb(255, 255, 150);
+}
+
+
+.feature-img{
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.feature-img .anim{
+    animation-delay: 1.5s;
+
+}
+
+
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
